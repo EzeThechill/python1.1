@@ -42,7 +42,7 @@
 # else:
 #     print(f" no debe pasar de {x} a 50 ")
         
-
+print("Lo bueno")
 
     
 
