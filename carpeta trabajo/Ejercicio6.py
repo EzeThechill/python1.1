@@ -17,5 +17,5 @@ while intento<=3:
     numero=input(f"Del 0 al 100 ? ", "Que numero crees que estoy procesando")
 
     
-print("enda")
+print("end")
 
