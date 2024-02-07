@@ -7,15 +7,15 @@ resultado=20
 
 while intento<=3:
     if numero == resultado:
-        else print(f"El numero {resultado} que estoy procesando es correcto")
+    else: print(f"El numero {resultado} que estoy procesando es correcto")
 
-    if numero != resultado:
-        else print(f"El numero {intento} que estoy procesando es incorrecto")
-        
-        intento = intento+1
+    if numero != resultado:   
+    else: print(f"El numero {intento} que estoy procesando es incorrecto")
+    
+    intento = intento+1
 
     numero=input(f"Del 0 al 100 ? ", "Que numero crees que estoy procesando")
 
     
-print("end")
+print("enda")
 
