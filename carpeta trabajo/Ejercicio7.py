@@ -5,16 +5,22 @@
 
 print("Bienvenido a Nuestra tienda de coches")
 
-coche1={"Modelo": "a123" ,"Color": "Rojo","Caracteristica": "Rapido"}
+coche1={"Modelo ": "a123" ,"Color ": "Rojo","Caracteristica ": "Rapido"}
 
-coche1.pop({"Caracteristica": "Rapido"})
+coche1.update({"Precio ": 20.000})
+coche1.pop("Caracteristica ")
 
 print(coche1)
 
-# coche1.update({"Precio": 20.000})
+for k , v in coche1.items():
+    print(k , v)
+    
 
-# for k , v in coche1
-# print(coche1)
+
+
+
+
+
 
 
 
