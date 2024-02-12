@@ -3,27 +3,18 @@
 # Por ejemplo, modelo, color, …Practicar añadir una característica, borrar, conseguir, ….
 
 
-print("Bienvenido a Nuestra tienda de coches")
+# print("Bienvenido a Nuestra tienda de coches")
 
-coche1={"Modelo ": "a123" ,"Color ": "Rojo","Caracteristica ": "Rapido"}
+# coche1={"Modelo ": "a123" ,"Color ": "Rojo","Caracteristica ": "Rapido"}
 
-coche1.update({"Precio ": 20.000})
-coche1.pop("Caracteristica ")
+# coche1.update({"Precio ": 20.000})
+# coche1.pop("Caracteristica ")
 
-print(coche1)
+# print(coche1)
 
-for k , v in coche1.items():
-    print(k , v)
+# for k , v in coche1.items():
+#     print(k , v)
     
-
-
-
-
-
-
-
-
-
 
 
 
@@ -55,21 +46,15 @@ for k , v in coche1.items():
 # RS5
 # R8
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Ejercicio 1.b:
 # Colocar dos diccionarios de coches en un array (lista), para tener una estructura que pueda guardar varios tipos de coches.
 
 # Ejercicio 2:
 # Preguntar a 3 usuarios por su nombre, y la comida que más les gusta. Guardar su nombre y comida en un diccionario.
+
+# x= "mal#ralse#,esxsa#asdf#adfa#"
+
+# x.capitalize
+# if "mal" in x.upper():
+# print("listo")
+# print(x)
