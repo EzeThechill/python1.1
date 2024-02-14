@@ -10,4 +10,5 @@ for i in listastring:
 
 resultado = ",".join(listadepalabras)
 print(resultado)
+# Lo bueno
 
