@@ -23,14 +23,15 @@ for c in correo:
     # print(x, y)
 
  # Informes
-sTexto= ""
-for i in listadenombres:
+sTexto= "Informe usuario \n"
+for i in listadedominios:
     sTexto = sTexto + "," + i # + "/no"
 
 print(sTexto)
 setdedominios = set(listadedominios)
 print(setdedominios)
     
-
+with open("informe.txt", "w") as f:
+    f.write(sTexto)
 
 
