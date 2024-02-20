@@ -74,15 +74,24 @@ print(resultado)
 # Crear una función para pedir una hamburguesa, pizza o patatas fritas. 
 # Devolver el precio (más impuestos) dependiendo de la comida deseada por el usuario. 
 
-listadecomida={f"Hamburguesa" ,"Pizza" , "Patatas fritas" }
+listadecomida={f"Hamburguesa":15 ,"Pizza":15 , "Patatas fritas":3 }
 print(f"Bienvenido a nuestro restaurante de comida rápida ")
-print(f"Aqui tiene nuestra comida" ,{listadecomida})
+print(f"Aqui tiene nuestra comida para elegir" , [listadecomida])
 
-input(f"Que quieres pedir ")
-Hamburguesa=
-Pizza=
-Patatasfritas=
-# listadecomida=input("Que quiere pedir ")
+pedido= input(f"Que quieres pedir ")
+
+for k,v in listadecomida.items():
+    print(k,v)
+
+
+# for k in listadecomida.keys():
+#     print(k)
+
+# for v in listadecomida.values():
+#     print(v)
+
+
+
 
 
 
