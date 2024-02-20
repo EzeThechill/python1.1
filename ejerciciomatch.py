@@ -70,4 +70,27 @@ resultado=metros(2,4)
 print(resultado)
 
 
- 
+# Trabajas en un restaurante de comida rápida. 
+# Crear una función para pedir una hamburguesa, pizza o patatas fritas. 
+# Devolver el precio (más impuestos) dependiendo de la comida deseada por el usuario. 
+
+listadecomida={f"Hamburguesa" ,"Pizza" , "Patatas fritas" }
+print(f"Bienvenido a nuestro restaurante de comida rápida ")
+print(f"Aqui tiene nuestra comida" ,{listadecomida})
+
+input(f"Que quieres pedir ")
+Hamburguesa=
+Pizza=
+Patatasfritas=
+# listadecomida=input("Que quiere pedir ")
+
+
+
+# Crear una función para comprobar la edad de un usuario antes de que entre en una web para adultos. Si es menor a 18, devolver False.  
+
+# Crear una función para convertir kilómetros a millas.
+
+# Crear una función para mostrar la diferencia entre dos números enteros.
+
+# Crear una función para comprobar si la primera letra de un string es mayúscula. Por ejemplo, “Google” devuelve True pero “google” devuelve False.
+
