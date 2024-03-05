@@ -217,7 +217,7 @@ class Moto:
     def __init__(self, marca, modelo, tipo, fuel_maxima, fuel_nivel_actual, averiado, ruedas, color, cadena, manillar):
         Vehiculo.__init__(self, marca, modelo, tipo, fuel_maxima, fuel_nivel_actual, averiado, ruedas, color)
 
-    def hacer_caballito():
+    def hacer_caballito(self):
         pass
 
 
