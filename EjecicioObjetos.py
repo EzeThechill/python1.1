@@ -208,18 +208,26 @@ class Vehiculo:
 class Camion:
     def __init__(self,marca, modelo,tipo, fuel_maxima, fuel_nivel_actual, averiado, ruedas, color, cabina):
         Vehiculo.__init__(self, marca, modelo, tipo, fuel_maxima, fuel_nivel_actual, averiado, ruedas, color )
-    def dormir():
-        pass
-    def transportar_productos():
-        pass
+        self.cabina = cabina
+
+    def dormir(self):
+        print("Te vas a chocar si no te levantas")
+
+    def transportar_productos(self):
+        print("transportando productos fragiles")
 
 class Moto:
     def __init__(self, marca, modelo, tipo, fuel_maxima, fuel_nivel_actual, averiado, ruedas, color, cadena, manillar):
         Vehiculo.__init__(self, marca, modelo, tipo, fuel_maxima, fuel_nivel_actual, averiado, ruedas, color)
+        self.cadena = cadena
+        self.manillar = manillar
 
     def hacer_caballito(self):
-        pass
+        print("Estas haciendo un caballito increible")
 
+#--------------
+
+Camion = Vehiculo("Toyota", "rav4")
 
 
 
