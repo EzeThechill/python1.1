@@ -72,41 +72,157 @@
 
 #-------------------------------------------
 
-class Guitarra:
-    def __init__(self, marca, cuerdas=6): 
-        self.marca = marca
-        self.cuerdas = cuerdas
-        self._precio = 100
+# class Guitarra:
+#     def __init__(self, marca, cuerdas=6): 
+#         self.marca = marca
+#         self.cuerdas = cuerdas
+#         self._precio = 100
     
-    def romperCuerdas(self, cuerdasRotas):
-        if cuerdasRotas > self.cuerdas:
-            self.cuerdas = 0
-            print("no se puede romper mas de 1")
-        else:
-            self.cuerdas = self.cuerdas - cuerdasRotas
-            print(f"Me he quedado con {self.cuerdas} cuerdas ")
+#     def romperCuerdas(self, cuerdasRotas):
+#         if cuerdasRotas > self.cuerdas:
+#             self.cuerdas = 0
+#             print("no se puede romper mas de 1")
+#         else:
+#             self.cuerdas = self.cuerdas - cuerdasRotas
+#             print(f"Me he quedado con {self.cuerdas} cuerdas ")
             
-    def __str__(self):
-        return f"Hola Guitarra {self.marca}"
+#     def __str__(self):
+#         return f"Hola Guitarra {self.marca}"
      
-    def tocar(self):
-        print(f"Soy {self.marca} y brrn, brannn, bromm")
+#     def tocar(self):
+#         print(f"Soy {self.marca} y brrn, brannn, bromm")
 
-class GuitarraElectrica(Guitarra):
-    def __init__(self, marca, cuerdas, distorsion):
-        super().__init__(marca, cuerdas)
-        self.distorsion = distorsion
+# class GuitarraElectrica(Guitarra):
+#     def __init__(self, marca, cuerdas, distorsion):
+#         super().__init__(marca, cuerdas)
+#         self.distorsion = distorsion
     
-    def tocar(self):
-        print(f"Soy {self.marca} y brrn, brannn, bromm".upper())
+#     def tocar(self):
+#         print(f"Soy {self.marca} y brrn, brannn, bromm".upper())
 
 
 
 # main programa - instanciar / usar la clase
         
 # nombre = input("Cual es el nombre de la guitarra")
-guit = GuitarraElectrica("les paul", 6, 100)
-print(guit.marca)
-guit.romperCuerdas(1)
-print(guit.cuerdas)
-guit.tocar()
+# guit = GuitarraElectrica("les paul", 6, 100)
+# print(guit.marca)
+# guit.romperCuerdas(1)
+# print(guit.cuerdas)
+# guit.tocar()
+
+# class Madre:
+#     def __init__(self, nonbre, edad):
+#         self.edad = edad
+    
+#     def cocinar(selt):
+#         print("me gusta el deporte")
+
+# class Padre:
+#     def __init__(self, ojos):
+#       self.ojos = ojos
+
+#     def cocinar(self):
+#         print("me gusta cocinar")
+
+# class Hijo(Madre, Padre):
+#     def __init__(self,nombre, edad, ojos, estudios):
+#         Madre.__init__(self, nombre, edad)
+#         Padre.__init__(self, ojos, )
+#         self.estudios = estudios
+
+# jon= Hijo("Jon", 32, "azules", "programacion")
+# jon.cocinar()
+# jon.estudios()
+# print()
+# print()
+# print()
+
+# class Direccion:
+#   def __init__(self, calle, ciudad):
+#       self.calle = calle
+#       self.ciudad = ciudad
+
+#   def mostrar(self):
+#       print(self.calle)
+#       print(self.ciudad)
+
+# class Persona:
+#     def __init__(self, nombre, email):
+#       self.nombre = nombre
+#       self.email= email
+
+#     def mostrar(self):
+#       print(self.nombre + ' ' + self.email)
+
+# # Agregar funcionalidad para usar la herencia múltiple
+# class Contacto(Direccion, Persona):
+#     def __init__(self, calle, ciudad, nombre, email, activo):
+#       Direccion.__init__(self, calle, ciudad)
+#       Persona.__init__(self, nombre, email)
+#       self.activo = activo
+    
+#     def mostrar(self):
+#        Direccion.mostrar(self)
+#        Persona.mostrar(self)
+#        print(self.activo)
+    
+
+# # Instanciar un contacto que es activo (True)
+# jon = Contacto('Jon', 'tugrp@example.com', 'Calle 1', 'Ciudad 1', True) 
+# jon.mostrar()
+# e= Empleado()
+# jon.mostrarEstado(e) 
+
+
+
+
+# Mostrar un mensaje cuando el vehículo está conduciendo
+# Por defecto, venden vehículos sin gasolina
+# Cuando el nivel de gasolina es 0, el vehículo no puede conducir más
+# Si esta averiado (si o no), tampoco puede conducir
+# Si llenas más gasolina que el nivel máximo, mostrar un mensaje de error
+# Al conducir, consume fuel
+
+
+# Por ejemplo:
+# rav4 = Vehiculo("Toyota", "rav4", "diesel")
+# rav4.conducir()   # Lo siento, no te queda gasolina.
+# rav4.actualizar_deposito(10)
+# rav4.conducir()  # El rav4 está conduciendo.
+
+class Vehiculo:
+    def __init__(self, marca, modelo, tipo, fuel_maxima:100, fuel_nivel_actual:50, averiado, ruedas:4, color):
+        self.marca = marca
+        self.tipo = tipo
+        self.fuel_maxima = fuel_maxima
+        self.fuel_nivel_actual = fuel_nivel_actual
+        self.averiado = averiado
+        self.ruedas = ruedas
+        self.color = color
+    
+    def conducir(self, llenar_deposito:True, nivel_de_deposito:10, Chocar:True, accidente:True):
+        print("Estas conduciendo")
+        
+
+class Camion:
+    def __init__(self,marca, modelo,tipo, fuel_maxima, fuel_nivel_actual, averiado, ruedas, color, cabina):
+        Vehiculo.__init__(self, marca, modelo, tipo, fuel_maxima, fuel_nivel_actual, averiado, ruedas, color )
+    def dormir():
+        pass
+    def transportar_productos():
+        pass
+
+class Moto:
+    def __init__(self, marca, modelo, tipo, fuel_maxima, fuel_nivel_actual, averiado, ruedas, color, cadena, manillar):
+        Vehiculo.__init__(self, marca, modelo, tipo, fuel_maxima, fuel_nivel_actual, averiado, ruedas, color)
+
+    def hacer_caballito():
+        pass
+
+
+
+
+    
+
+
