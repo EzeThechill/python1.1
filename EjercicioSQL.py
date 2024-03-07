@@ -45,7 +45,7 @@ while True:
 
 
     elif accion ==5:
-        print("cerrado")
+        print("Cerrado")
         conn.close
         break
     
