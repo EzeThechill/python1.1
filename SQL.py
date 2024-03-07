@@ -32,3 +32,12 @@ for row in rows:
     print((row[COL_DURACION])) # lista
 
 conn.close()
+
+while True:
+
+    accion = int(input("que quieres? 1. SELECT, 2. INSERT, 3 UPDATE 4. DELETE"))
+    
+    if accion ==1:
+        id = input("Cual es el tu id ? ")
+    elif accion ==2:
+        nombre = input("Cual es el nombre de la pelicula")
