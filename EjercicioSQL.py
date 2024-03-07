@@ -49,5 +49,14 @@ while True:
         conn.close
         break
     
-    
+    elif accion ==6:
+        nombre = input("Que peli buscas? ")
+        nombre = nombre + "%"
+        sSQL = "SELECT * FROM Peliculas WHERE nombre LIKE ? "
+        cur = conn.cursor()
+        cur.execute(sSQL, (nombre,))
+        filas = cur.fetchall()
+        for fila in filas:
+            print(fila)
+        conn.commit()
 
