@@ -1,6 +1,6 @@
 
-from flask import Flask, render_template
-from productos import Producto
+from flask import Flask, render_template, request, url_for, redirect
+# from productos import Producto
 # para ejecutar= python  -m flask run
 app = Flask(__name__)
 
@@ -33,16 +33,33 @@ def pagina2(): #no tiene nada que ver con el nombre con el nombre de html
 #     edad= 20
 #     frutas=["coco", "zapato", "recola", "pomelo", "remolacha","ALFOMBRA"]
 #     return render_template("pagina1.html", nombre=nombre, edad=edad)
-@app.route("/productos")
-def dinamica1(): #no tiene nada que ver con el nombre con el nombre de html
-    p1= Producto(1, "Raqueta", 5.99, "")
-    p2= Producto(2, "Balon", 9.99, "")
-    p3= Producto(3, "Lavadora", 19.99, "")
+# @app.route("/productos")
+# def dinamica1(): #no tiene nada que ver con el nombre con el nombre de html
+#     p1= Producto(1, "Raqueta", 5.99, "/images/tree.jpg")
+#     p2= Producto(2, "Balon", 9.99, "")
+#     p3= Producto(3, "Lavadora", 19.99, "")
 
-    listaProductos = [p1, p2, p3]
+#     listaProductos = [p1, p2, p3]
 
-    return render_template("pagina2.html",listaProductos=listaProductos)
+#     return render_template("pagina2.html",listaProductos=listaProductos)
 
+@app.route("/dashboard/<string:username>")
+def dashboard(username):
+    return f"ya estas dentro {username}"
+
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+    if request.method=="GET":
+        return render_template("login.html")
+    else: #POST
+        username =request.form["username"]
+        password =request.form["password"]
+
+    if username == "eze" and password=="pass":
+        return redirect("/dashboard")
+    else:
+        return "Payaso. contraseña o usuario"
+    
 
 
 
